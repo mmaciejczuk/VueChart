@@ -1,10 +1,14 @@
 <template>
-    <div class="grid-container">        
-        <div v-for="(item, n) in items">
-            <div class="btn" v-bind:id=n v-on:click="displayChart(item)">{{item}}</div>
-        </div> 
-        <div id="line-chart"></div>
-        <div id="apple-chart"></div>
+    <div class="wrapper">     
+        <div>
+            <div v-for="(item, n) in items">
+                <div class="btn" v-bind:id=n v-on:click="displayChart(item)">{{item}}</div>
+            </div>     
+        </div>   
+        <div>
+            <div id="line-chart"></div>
+            <div id="apple-chart"></div>
+        </div>
     </div>
 </template>
 
@@ -119,20 +123,28 @@
 </script>
 
 <style scoped>
-.grid-containder{
-    font-size: 40px;
-    text-align: center;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-auto-rows: minmax(50px, 100px);
+.wrapper{
+    display:grid;
+    grid-template-columns: 20% 79%;
+    /*grid-column-gap: 1%;
+    grid-row-gap: 1%; */
+    grid-gap: 1%;
+    height: 100vh;
+}
+
+.wrapper > div{
+    background: #eee;
+    padding: 1em;
+}
+
+.wrapper > div:nth-child(odd){
+    background: #ddd;
 }
 
 .zero{
-    grid-column: 1 / 3;
+
 }
 .btn{
-    background-color: #eee;
-    border: 1px solid #999;
-    width: 100px;
+
 }
 </style>
