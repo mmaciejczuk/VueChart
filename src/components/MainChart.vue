@@ -117,18 +117,19 @@
             }) 
             .catch(function (error) {
                 console.log(error);
-            });                       
-        }       
+            });
+        }
+               
     }
 </script>
 
 <style scoped>
 .wrapper{
     display:grid;
-    grid-template-columns: 20% 79%;
+    grid-template-columns: 1fr 3fr;
     /*grid-column-gap: 1%;
     grid-row-gap: 1%; */
-    grid-gap: 1%;
+    grid-gap: 1em;
     height: 100vh;
 }
 
@@ -141,9 +142,15 @@
     background: #ddd;
 }
 
-.zero{
-
+#line-chart{
+    border: solid 1px;
+    margin-bottom: 20px;
 }
+
+#apple-chart{
+    border: solid 1px;
+}
+
 .btn{
 
 }
