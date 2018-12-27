@@ -1,17 +1,19 @@
 <template>
   <div id="app">
-    <router-view/>
     <main-chart></main-chart>
+    <filters></filters>
   </div>
 </template>
 
 <script>
 import MainChart from './components/MainChart'
+import Filters from './components/Filters'
 
 export default {
   name: 'app',
   components: {
-    MainChart
+    MainChart,
+    Filters
   }
 }
 </script>
