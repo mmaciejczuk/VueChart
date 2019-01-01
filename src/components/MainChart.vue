@@ -152,7 +152,4 @@
     border: solid 1px;
 }
 
-.btn{
-
-}
 </style>
