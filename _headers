@@ -1,0 +1,12 @@
+# A path:
+https://static.fundconnect.com/data.json
+   # Headers for that path:
+   Access-Control-Allow-Origin: *
+  
+/templates/index.html
+   X-Frame-Options: DENY
+   X-XSS-Protection: 1; mode=block
+  
+/templates/index2.html
+   X-Frame-Options: SAMEORIGIN
+  
