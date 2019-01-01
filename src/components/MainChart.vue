@@ -1,3 +1,5 @@
+
+
 <template>
     <div class="wrapper">     
         <div>
@@ -31,7 +33,7 @@
                 let allocationCountries;
                 let performance;
 
-                this.$http.get('http://static.fundconnect.com/data.json')
+                this.$http.get('https://static.fundconnect.com/data.json')
                 .then(response => {
                     const {data} = response;
 
