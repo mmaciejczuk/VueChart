@@ -1,5 +1,5 @@
 [[headers]]
-  for = "https://static.fundconnect.com/"
+  for = "https://static.fundconnect.com/data.json"
   [headers.values]
 Access-Control-Allow-Origin = "*"
 Access-Control-Allow-Credentials = true
