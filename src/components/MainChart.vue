@@ -111,7 +111,7 @@
 
         //chrome.exe --user-data-dir="C://Chrome dev session" --disable-web-security
         created: function(){
-            this.$http.get('http://static.fundconnect.com/data.json')
+            this.$http.get('https://static.fundconnect.com/data.json')
             .then(response => {
                 this.items = response.data.map(item => item._id);
             }) 
