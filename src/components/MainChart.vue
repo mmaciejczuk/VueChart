@@ -1,5 +1,3 @@
-
-
 <template>
     <div class="wrapper">     
         <div>
@@ -28,10 +26,91 @@
         },
 
         methods :{
+            
             displayChart: function(itemName){
                 let itemContent;
                 let allocationCountries;
                 let performance;
+
+            // axios.get('../../data/colors.json', { responseType: 'arraybuffer' }).then(response => {
+            //     var buffer = new Buffer(response.data, 'binary');
+            //     var textdata = buffer.toString(); // for string
+            //     console.log(textdata);
+            //     var jsondata = buffer.toJSON(); // for json
+            //     console.log(jsondata);
+            // });                
+
+            // let uri = "../../data/colors.json";
+            // axios.get(uri)
+            // .then((response) => {
+            //     console.log(response.data);
+            //     })
+            // .then((response) => {
+            //     console.table("item " + this.item);
+            //     })
+            // .catch((error) => {
+            //     console.error("error " + error);
+            //     }); 
+                                    
+            // axios.get('../../data/colors.json')
+            // .catch(function (error) {
+            //     if (error.response) {
+            //     // The request was made and the server responded with a status code
+            //     // that falls out of the range of 2xx
+            //     console.log(error.response.data);
+            //     console.log(error.response.status);
+            //     console.log(error.response.headers);
+            //     } else if (error.request) {
+            //     // The request was made but no response was received
+            //     // `error.request` is an instance of XMLHttpRequest in the browser and an instance of
+            //     // http.ClientRequest in node.js
+            //     console.log(error.request);
+            //     } else {
+            //     // Something happened in setting up the request that triggered an Error
+            //     console.log('Error', error.message);
+            //     }
+            //     console.log(error.config);
+            // });                        
+
+
+            //     $.getJSON( "../../data/colors.json", function(json) {
+            //         console.log( "JSON Data received, name is " + json);
+            //     });                
+
+            //     fetch('../../data/colors.json').then(response => {
+            //         return response.json();
+            //     }).then(data => {
+            //         console.log(data);
+            //     }).catch(err => {
+            //         console.log(err);
+            //     });
+
+            //     fetch('../../data/colors.json').then(response => {
+            //         return response.text();
+            //     }).then(text => {
+            //         console.log(text);
+            //     }).catch(err => {
+            //         console.log(err);
+            //     }); 
+                
+            //     var request = new XMLHttpRequest();
+            //     request.open("GET", "../../data/colors.json", false);
+            //     request.send(null);
+            //     request.onreadystatechange = function() {
+            //     if ( request.readyState === 4 && request.status === 200 ) {
+            //         var my_JSON_object = JSON.parse(request.responseText);
+            //         console.log(my_JSON_object);
+            //     }
+            //         else{
+            //             console.log("dupa");
+            //         }
+            //     } 
+
+            //     var request = new XMLHttpRequest();
+            //     request.open("GET","../../data/colors.json", false);
+            //     request.send(null);
+            //     var jsonData = JSON.parse(request.responseText);
+            //     console.log(jsonData);
 
                 this.$http.get('https://static.fundconnect.com/data.json')
                 .then(response => {
